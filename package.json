@@ -1,0 +1,16 @@
+{
+  "name": "challenge-3.3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./styles.css -o ./src/css/styles.css",
+    "watch": "npx tailwindcss -i ./styles.css -o ./src/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "Elias N",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
