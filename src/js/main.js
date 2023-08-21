@@ -23,7 +23,7 @@ const filterJobs = (key, isKeyAdded = true) => {
     : filterContainer.classList.replace('hidden', 'flex');
 
   for (const job of jobs) {
-    const { role, level, languages, tools, featured } = job.dataset;
+    const { role, level, languages, tools } = job.dataset;
 
     const jobTablets = [
       role,
@@ -31,8 +31,6 @@ const filterJobs = (key, isKeyAdded = true) => {
       ...languages.split(','),
       ...tools.split(','),
     ];
-
-    featured && job.classList.add('job-featured');
 
     const containsAll = [...filterKeys].every((element) =>
       jobTablets.includes(element)
