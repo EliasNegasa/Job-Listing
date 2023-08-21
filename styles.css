@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .tablets {
+    @apply text-cyan-dark bg-grayish-cyan-light font-bold p-2.5 rounded-md cursor-pointer transition-all hover:bg-cyan-dark hover:text-white;
+  }
+  .job-card {
+    @apply flex justify-between items-center bg-white p-8 rounded-md shadow-xl shadow-cyan-dark/10;
+  }
+  .job-featured {
+    @apply border-l-[6px] border-l-cyan-dark
+  }
+  .filters {
+    @apply mx-2 text-cyan-dark bg-grayish-cyan-light rounded-md cursor-pointer overflow-hidden;
+  }
+  .key-span {
+    @apply p-2.5 relative -top-1 font-bold;
+  }
+  .remove-button {
+    @apply w-8 h-8 bg-cyan-dark p-2 transition-all hover:bg-grayish-cyan-dark;
+  }
+}
+
+.hide-element {
+  display: none;
+}
