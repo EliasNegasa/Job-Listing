@@ -3,14 +3,17 @@
 @tailwind utilities;
 
 @layer components {
+  .tablets-container {
+    @apply flex items-center flex-wrap gap-2 md:gap-4 my-4 md:my-0 border-t-[1px] md:border-t-0 pt-4 md:pt-0 md:ml-4 border-grayish-cyan-medium;
+  }
   .tablets {
-    @apply text-cyan-dark bg-grayish-cyan-light font-bold p-2.5 rounded-md cursor-pointer transition-all hover:bg-cyan-dark hover:text-white;
+    @apply text-cyan-dark bg-grayish-cyan-light font-bold pt-1.5 pb-1 px-2.5 rounded-md cursor-pointer transition-all hover:bg-cyan-dark hover:text-white;
   }
   .job-card {
-    @apply flex justify-between items-center bg-white p-8 rounded-md shadow-xl shadow-cyan-dark/10;
+    @apply flex flex-col md:flex-row justify-between items-start md:items-center bg-white px-4 pb-8 md:p-8 rounded-md shadow-xl shadow-cyan-dark/10;
   }
   .job-featured {
-    @apply border-l-[6px] border-l-cyan-dark
+    @apply border-l-[6px] border-l-cyan-dark;
   }
   .filters {
     @apply mx-2 text-cyan-dark bg-grayish-cyan-light rounded-md cursor-pointer overflow-hidden;

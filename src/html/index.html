@@ -14,13 +14,13 @@
 
 <body class="font-league-sparton">
     <section>
-        <div class="bg-cyan-dark">
+        <header class="bg-cyan-dark">
             <img class="w-full" src="../../images/bg-header-desktop.svg" alt="Header Image">
-        </div>
-        <div class="bg-[#effafa] w-full">
+        </header>
+        <main class="bg-[#effafa] w-full">
 
             <div id="filterContainer"
-                class="hidden container mx-auto max-w-5xl bg-white py-4 px-6 relative -top-10 rounded-lg shadow-xl shadow-cyan-dark/10 justify-between items-center">
+                class="hidden container mx-6 md:mx-auto max-w-5xl bg-white py-4 px-6 relative -top-10 rounded-lg shadow-xl shadow-cyan-dark/10 justify-between items-center">
                 <div id="tabletContainer" class="flex">
 
                 </div>
@@ -28,13 +28,13 @@
             </div>
 
             <!-- Flex Container -->
-            <div class="flex flex-col space-y-6 container mx-auto max-w-5xl py-24">
+            <div class="flex flex-col space-y-12 md:space-y-6 container mx-auto px-6 max-w-5xl py-24">
 
                 <!-- Item 1 Container -->
                 <div class="job-card job-featured" data-role="Frontend" data-level="Senior"
                     data-languages="HTML,CSS,JavaScript" data-tools="">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/photosnap.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
@@ -55,7 +55,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Frontend</span>
                         <span class="tablets">Senior</span>
                         <span class="tablets">HTML</span>
@@ -67,16 +67,16 @@
                 <!-- Item 2 Container -->
                 <div class="job-card job-featured" data-role="Fullstack" data-level="Midweight" data-languages="Python"
                     data-tools="React">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/manage.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
                             <div class="space-x-1">
                                 <span class="text-cyan-dark font-bold mr-3">Manage</span>
-                                <span
+                                <span id="new"
                                     class="bg-cyan-dark text-white text-xs uppercase p-2 pb-1.5 rounded-full">New!</span>
-                                <span
+                                <span id="featured"
                                     class="bg-grayish-cyan-dark text-white text-xs uppercase p-2 pb-1.5 rounded-full">Featured</span>
                             </div>
                             <h4 class="font-bold text-[21px] hover:text-cyan-dark transition-all cursor-pointer">
@@ -89,7 +89,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Fullstack</span>
                         <span class="tablets">Midweight</span>
                         <span class="tablets">Python</span>
@@ -100,14 +100,14 @@
                 <!-- Item 3 Container -->
                 <div class="job-card" data-role="Frontend" data-level="Junior" data-languages="JavaScript"
                     data-tools="React,Sass">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/account.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
                             <div class="space-x-1">
                                 <span class="text-cyan-dark font-bold mr-3">Account</span>
-                                <span
+                                <span id="new"
                                     class="bg-cyan-dark text-white text-xs uppercase p-2 pb-1.5 rounded-full">New!</span>
                             </div>
                             <h4 class="font-bold text-[21px] hover:text-cyan-dark transition-all cursor-pointer">
@@ -120,7 +120,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Frontend</span>
                         <span class="tablets">Junior</span>
                         <span class="tablets">JavaScript</span>
@@ -132,8 +132,8 @@
                 <!-- Item 4 Container -->
                 <div class="job-card" data-role="Frontend" data-level="Junior" data-languages="CSS,JavaScript"
                     data-tools="">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/myhome.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
@@ -150,7 +150,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Frontend</span>
                         <span class="tablets">Junior</span>
                         <span class="tablets">CSS</span>
@@ -161,8 +161,8 @@
                 <!-- Item 5 Container -->
                 <div class="job-card" data-role="Fullstack" data-level="Midweight" data-languages="JavaScript"
                     data-tools="Ruby,Sass">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/loop-studios.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
@@ -179,7 +179,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Fullstack</span>
                         <span class="tablets">Midweight</span>
                         <span class="tablets">JavaScript</span>
@@ -190,8 +190,8 @@
 
                 <!-- Item 6 Container -->
                 <div class="job-card" data-role="Backend" data-level="Junior" data-languages="Ruby" data-tools="RoR">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/faceit.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
@@ -208,7 +208,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Backend</span>
                         <span class="tablets">Junior</span>
                         <span class="tablets">Ruby</span>
@@ -217,9 +217,10 @@
                 </div>
 
                 <!-- Item 7 Container -->
-                <div class="job-card" data-role="Frontend" data-level="Junior" data-languages="HTML,JavaScript" data-tools="Sass">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                <div class="job-card" data-role="Frontend" data-level="Junior" data-languages="HTML,JavaScript"
+                    data-tools="Sass">
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/shortly.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
@@ -236,7 +237,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Frontend</span>
                         <span class="tablets">Junior</span>
                         <span class="tablets">HTML</span>
@@ -246,9 +247,10 @@
                 </div>
 
                 <!-- Item 8 Container -->
-                <div class="job-card" data-role="Frontend" data-level="Junior" data-languages="JavaScript" data-tools="Vue,Sass">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                <div class="job-card" data-role="Frontend" data-level="Junior" data-languages="JavaScript"
+                    data-tools="Vue,Sass">
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/insure.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
@@ -265,7 +267,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Frontend</span>
                         <span class="tablets">Junior</span>
                         <span class="tablets">JavaScript</span>
@@ -275,9 +277,10 @@
                 </div>
 
                 <!-- Item 9 Container -->
-                <div class="job-card" data-role="Fullstack" data-level="Midweight" data-languages="JavaScript,Python" data-tools="Django">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                <div class="job-card" data-role="Fullstack" data-level="Midweight" data-languages="JavaScript,Python"
+                    data-tools="Django">
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/eyecam-co.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
@@ -294,7 +297,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Fullstack</span>
                         <span class="tablets">Midweight</span>
                         <span class="tablets">JavaScript</span>
@@ -304,9 +307,10 @@
                 </div>
 
                 <!-- Item 10 Container -->
-                <div class="job-card" data-role="Frontend" data-level="Junior" data-languages="JavaScript" data-tools="React,Sass">
-                    <div class="flex items-center space-x-6">
-                        <div>
+                <div class="job-card" data-role="Frontend" data-level="Junior" data-languages="JavaScript"
+                    data-tools="React,Sass">
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
+                        <div class="w-16 h-16 md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="../../images/the-air-filter-company.svg" alt="Logo">
                         </div>
                         <div class="space-y-2">
@@ -323,7 +327,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="space-x-4">
+                    <div class="tablets-container">
                         <span class="tablets">Frontend</span>
                         <span class="tablets">Junior</span>
                         <span class="tablets">JavaScript</span>
@@ -333,7 +337,7 @@
                 </div>
 
             </div>
-        </div>
+        </main>
     </section>
 </body>
 
