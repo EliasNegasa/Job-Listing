@@ -49,7 +49,7 @@ const createFilterTablet = (key) => {
   keySpan.textContent = key;
   keySpan.className = 'key-span';
 
-  removeIcon.src = '../../images/times-icon.png';
+  removeIcon.src = './images/times-icon.png';
 
   removeButton.className = 'remove-button';
   removeButton.appendChild(removeIcon);
