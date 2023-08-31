@@ -24,6 +24,21 @@
   .remove-button {
     @apply w-8 h-8 bg-cyan-dark p-2 transition-all hover:bg-grayish-cyan-dark;
   }
+  .job-detail-box {
+    @apply flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max;
+  }
+  .image-container {
+    @apply w-16 h-16 md:w-[88px] md:h-[88px] relative -top-8 md:top-0 rounded-full overflow-hidden;
+  }
+  .new-tag {
+    @apply bg-cyan-dark text-white text-xs uppercase p-2 pb-1.5 rounded-full;
+  }
+  .featured-tag {
+    @apply bg-grayish-cyan-dark text-white text-xs uppercase p-2 pb-1.5 rounded-full;
+  }
+  .job-name {
+    @apply font-bold text-[21px] hover:text-cyan-dark transition-all cursor-pointer;
+  }
 }
 
 .hide-element {
