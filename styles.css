@@ -4,7 +4,7 @@
 
 @layer components {
   .tablets-container {
-    @apply flex items-center flex-wrap gap-2 md:gap-4 my-4 md:my-0 border-t-[1px] md:border-t-0 pt-4 md:pt-0 md:ml-4 border-grayish-cyan-medium;
+    @apply flex items-center justify-end flex-wrap gap-2 md:gap-4 my-4 md:my-0 border-t-[1px] md:border-t-0 pt-4 md:pt-0 md:ml-4 border-grayish-cyan-medium;
   }
   .tablets {
     @apply text-cyan-dark bg-grayish-cyan-light font-bold pt-1.5 pb-1 px-2.5 rounded-md cursor-pointer transition-all hover:bg-cyan-dark hover:text-white;
