@@ -1,6 +1,3 @@
-const filterContainer = document.getElementById('filterContainer');
-const tabletContainer = document.getElementById('tabletContainer');
-
 const filterKeys = new Set();
 
 const filterJobs = (key, isKeyAdded = true) => {
@@ -53,3 +50,4 @@ const resetList = () => {
   }
 };
 
+clearButton.addEventListener('click', resetList);
