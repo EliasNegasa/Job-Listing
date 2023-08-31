@@ -32,6 +32,6 @@ const convertDate = (date) => {
     return '1yr ago';
   } else {
     const yearDifference = Math.floor(difference / 365);
-    return `${yearDifference}yr ago`;
+    return `${yearDifference}yrs ago`;
   }
 };
