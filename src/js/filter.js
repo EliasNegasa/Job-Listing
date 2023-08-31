@@ -1,15 +1,12 @@
 const filterContainer = document.getElementById('filterContainer');
 const tabletContainer = document.getElementById('tabletContainer');
-const tablets = document.querySelectorAll('.tablets');
-const jobs = document.querySelectorAll('.job-card');
-const clearButton = document.getElementById('clearButton');
 
 const filterKeys = new Set();
 
 const filterJobs = (key, isKeyAdded = true) => {
   if (isKeyAdded) {
     if (!filterKeys.has(key)) {
-      createFilterTablet(key);
+      filterTablet(key);
       filterKeys.add(key);
     } else {
       return;
@@ -40,28 +37,6 @@ const filterJobs = (key, isKeyAdded = true) => {
   }
 };
 
-const createFilterTablet = (key) => {
-  const tabletElement = document.createElement('div');
-  const keySpan = document.createElement('span');
-  const removeButton = document.createElement('button');
-  const removeIcon = document.createElement('img');
-
-  keySpan.textContent = key;
-  keySpan.className = 'key-span';
-
-  removeIcon.src = './images/times-icon.png';
-
-  removeButton.className = 'remove-button';
-  removeButton.appendChild(removeIcon);
-
-  removeButton.addEventListener('click', () => removeFilter(tabletElement));
-
-  tabletElement.className = 'filters';
-  tabletElement.append(keySpan, removeButton);
-
-  tabletContainer.appendChild(tabletElement);
-};
-
 const removeFilter = (tabletElement) => {
   tabletElement.remove();
   filterJobs(tabletElement.textContent, false);
@@ -78,8 +53,3 @@ const resetList = () => {
   }
 };
 
-for (const tablet of tablets) {
-  tablet.addEventListener('click', () => filterJobs(tablet.textContent));
-}
-
-clearButton.addEventListener('click', resetList);
