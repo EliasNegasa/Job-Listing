@@ -10,9 +10,19 @@ const loadJobs = async () => {
 
     jobCards = jobs.map((job) => jobCard(job)).join('');
   } catch (error) {
-    console.error(error);
-    errorBox.textContent = error.message;
-    errorBox.classList.replace('hidden', 'block');
+    const { response } = error;
+
+    if (response) {
+      const { status, data } = response;
+
+      errorStatus.textContent = status;
+      errorMessage.textContent = data.error;
+    } else {
+      errorMessage.textContent = error.message;
+    }
+
+    errorBox.classList.replace('hidden', 'flex');
+    jobContainer.innerHTML = '';
     return;
   }
 

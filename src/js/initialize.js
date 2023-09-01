@@ -2,7 +2,9 @@ let jobs = [];
 const jobContainer = document.getElementById('jobContainer');
 const filterContainer = document.getElementById('filterContainer');
 const tabletContainer = document.getElementById('tabletContainer');
-const errorBox = document.getElementById('error');
+const errorBox = document.querySelector('#error');
+const errorStatus = document.querySelector('#error .status');
+const errorMessage = document.querySelector('#error .message');
 const clearButton = document.getElementById('clearButton');
 
 const initializeDOM = () => {
